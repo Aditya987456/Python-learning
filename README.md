@@ -19,8 +19,34 @@ Installing everything globally can cause conflicts.
 
 With a virtual environment, each project can have its own packages and versions.
 
-### Create a virtual environment
+<br>
 
+### Whole Workflow :
+
+
+
+#### Create
 ```bash
 python -m venv .venv
 ```
+
+#### Activate
+```bash
+source .venv/bin/activate
+```
+
+#### Install packages
+```bash
+python -m pip install <package>
+```
+
+#### Work on the project
+```bash
+python main.py
+```
+
+#### Deactivate when finished
+```bash
+deactivate
+```
+
