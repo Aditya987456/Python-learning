@@ -313,6 +313,39 @@ An escape character is a backslash '\' followed by the character you want to ins
 
 # -------------------------------------------- functions and recursions ----------------------------------------------
 
+# def func1():
+#     print("Hell000000")
+
+# func1()
+
+
+# def greet():
+#     name = input("Enter your name : ")
+#     print(f"Good day! {name}")
+
+# greet()
+
+
+# name = input("Enter your name : ")
+
+# def greet(name, ending = "thanks"):
+#     print(f"Namaste! {name}")
+#     print(ending)
+
+# greet(name)
+
+
+
+# def factorial(n):
+#     if(n==1 or n==0):
+#         return 1
+#     return n*factorial(n-1)
+
+
+# n = int(input("Enter your no. to find out its factorial : "))
+
+# ans = factorial(n)
+# print(f"Factorial of {n} = {ans}")
 
 
 

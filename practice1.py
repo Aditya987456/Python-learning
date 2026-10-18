@@ -725,3 +725,144 @@ l = ["Harry", "Soham", "Sachin", "Rahul"]
 # for i in range(1, 11):
 #     val = (11-i) * num
 #     print(f"{num} * {11-i} = {val}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+Practice Set  --- functions and recursion
+
+1. Write a program using functions to find greatest of three numbers.
+
+2. Write a python program using function to convert Celsius to Fahrenheit.
+
+3. How do you prevent a python print() function to print a new line at the end.
+
+4. Write a recursive function to calculate the sum of first n natural numbers.
+
+5. Write a python function to print first n lines of the following pattern.
+***
+**
+*
+- for n = 3
+
+6. Write a python function which converts inches to cms.
+
+7. Write a python function to remove a given word from a list and strip it at the same time.
+
+8. Write a python function to print multiplication table of a given number.
+
+'''
+
+
+# # --------------------------- Q1 -------------------------------
+# def greatest(a,b,c):
+#     if(a>=b and a>=c):
+#         return a
+#     elif(a<=b and b>=c):
+#         return b
+#     else:
+#         return c
+
+# a,b,c = map(int, input("enter your all three numbers separated by space: ").split())
+# ans = greatest(a,b,c)
+
+# print(f"Greatest number among {a}, {b}, {c} is : {ans}")
+
+
+
+
+# # --------------------------- Q2 -------------------------------
+# def ConverTemperature(value):
+#     ans = (value * (9/5)) + 32
+#     return ans
+
+# input = float(input("Enter your celsius temperature : "))
+# print(f"Converted {input} Celsius(C) = {ConverTemperature(input)} Fahrenheit(F)")
+
+
+
+
+
+# # --------------------------- Q3 -------------------------------
+# print("Hellooooooooooooooooooooo")
+
+# print("Hello oooooooooooooooooooooooo", end="")
+# print("Hellooooooooooooooooooooo")
+
+
+
+
+# # --------------------------- Q4 -------------------------------
+# n = int(input("Enter your natural number : "))
+# def Sum(n):
+#     if(n==0): return 0
+#     return n+Sum(n-1)
+
+# print(f"Sum of {n} natural numbers is : {Sum(n)}")
+
+
+
+# # --------------------------- Q5 -------------------------------
+# def pattern(n):
+#     if(n==0): return
+#     print("*" * n)
+#     pattern(n-1)
+
+# n = int(input("Enter the value of n : "))
+
+# pattern(n)
+
+
+
+
+# # --------------------------- Q6 -------------------------------
+# def ConverInches(n):
+#     return 2.54*n
+
+# n = float(input("Enter the value of inches : "))
+
+# print(f"Converted {n} inches = {ConverInches(n)} cm")
+
+
+
+
+
+# # --------------------------- Q7 -------------------------------
+# def remove_and_strip(wordList, word_to_remove):
+#     target = word_to_remove.strip()
+
+#     result = []  #empty list to store final words...
+#     for item in wordList:
+#         cleaned_items = item.strip()
+
+#         if(cleaned_items!=target):
+#             result.append(cleaned_items)
+
+#     return result
+
+
+# fruits = ["  apple ", " banana ", "apple"]
+# print(remove_and_strip(fruits, "apple"))
+
+
+
+
+# # --------------------------- Q8 -------------------------------
+# def Tableprint(n):
+#     for i in range(1,11):
+#         val = n*i
+#         print(f"{n} * {i} = {val}")
+
+
+# n = int(input("Enter the no. for its table : "))
+# Tableprint(n)
