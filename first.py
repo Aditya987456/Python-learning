@@ -349,3 +349,49 @@ An escape character is a backslash '\' followed by the character you want to ins
 
 
 
+
+
+
+
+
+# -----------------------------------------------------   file I/O   ------------------------------------------------
+# to persist data we have to load or store data in non volatile memory which is ROM. thats why use file...to stores....
+
+# # opening file- 
+# open("file.txt", "r")  # here "r" means read mode.
+
+
+# # -------------- reading a file --------------
+# f = open("file.txt", "r")
+
+# text = f.read()
+# # text = f.readline()   # read one line from the file.
+# print(text)
+
+# f.close()
+
+
+# # --------- write to a file ---------------
+
+# f = open("this.txt", "w")
+
+# f.write("this is nice saaar")
+
+# f.close()
+
+
+
+# # ---------- With statement : best way to open and close the file automatically is with statement---------
+
+# with open("this.txt", "w") as f:
+#     f.write("hello this is aditya raj , 2026 btech cse grad currently looking for the full stack, backend developer and software engineer opportunities.")
+
+
+# with open("this.txt", "r") as f:
+#     text = f.read()
+
+# print(text)
+
+
+
+
